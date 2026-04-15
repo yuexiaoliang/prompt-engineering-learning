@@ -593,7 +593,7 @@ However, some customers reported minor issues with the mobile app."
 #### Pydantic 模型定义
 
 ```python
-from pydantic import BaseModel, validator, Field
+from pydantic import BaseModel, field_validator, Field  # Pydantic v2
 from typing import List, Optional
 
 class AgentResponse(BaseModel):
@@ -602,7 +602,7 @@ class AgentResponse(BaseModel):
     answer: str = Field(..., description="最终答案")
     sources: List[str] = Field(default=[], description="来源列表")
 
-    @validator('confidence')
+    @field_validator('confidence')
     def check_confidence(cls, v):
         if not 0 <= v <= 1:
             raise ValueError('置信度必须在 0 和 1 之间')

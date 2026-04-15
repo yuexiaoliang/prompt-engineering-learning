@@ -565,7 +565,7 @@ Do not include any text outside the XML tags.
 Use Pydantic models to validate and parse LLM outputs:
 
 ```python
-from pydantic import BaseModel, validator, ValidationError
+from pydantic import BaseModel, field_validator, ValidationError  # Pydantic v2
 from typing import List
 import json
 
@@ -575,13 +575,13 @@ class AgentResponse(BaseModel):
     answer: str
     sources: List[str]
 
-    @validator('confidence')
+    @field_validator('confidence')
     def check_confidence_range(cls, v):
         if not 0 <= v <= 1:
             raise ValueError('Confidence must be between 0 and 1')
         return v
 
-    @validator('answer')
+    @field_validator('answer')
     def answer_not_empty(cls, v):
         if not v or not v.strip():
             raise ValueError('Answer cannot be empty')
