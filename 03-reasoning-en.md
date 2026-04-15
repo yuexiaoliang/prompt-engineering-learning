@@ -549,7 +549,7 @@ These techniques transform language models from simple pattern matchers into sop
 
 ## Next Steps
 
-→ Continue to [Chapter 4: Agents & Tools](./04-agents-en.md)
+→ Continue to [Chapter 4: Agents & Tools](./04-agents-tools-en.md)
 
 Or review:
 - [Chapter 2: Basic Prompting](./02-basics-en.md) for foundational techniques

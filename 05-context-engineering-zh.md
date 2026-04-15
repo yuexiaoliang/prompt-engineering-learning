@@ -1222,8 +1222,8 @@ workspace/
 ### 相关章节
 
 - [第 4 章：Agent 与工具](./04-agents-tools-zh.md) - ReAct 和工具使用
-- [第 6 章：安全与防御](./06-security-zh.md) - Prompt 注入防御
-- [第 7 章：高级技术](./07-advanced-zh.md) - 高级 Prompt 技术
+- [第 6 章：安全与防御](./07-security-zh.md) - Prompt 注入防御
+- [第 7 章：高级技术](./09-advanced-zh.md) - 高级 Prompt 技术
 
 ---
 
