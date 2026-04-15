@@ -24,9 +24,6 @@ Zero-Shot Prompting means giving direct instructions to the model without provid
 flowchart LR
     A[User Instruction] --> B[LLM]
     B --> C[Direct Output]
-
-    style A fill:#e1f5fe
-    style C fill:#e8f5e9
 ```
 
 ### Use Cases
@@ -135,11 +132,6 @@ flowchart LR
     C[Example 3] --> D
     D --> E[New Input]
     E --> F[Pattern-Following Output]
-
-    style A fill:#fff3e0
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style F fill:#e8f5e9
 ```
 
 ### Use Cases
@@ -285,9 +277,6 @@ flowchart TB
         M2[Solution Steps] --> M3
         M3 --> M4[Apply to Any Input]
     end
-
-    style Few-Shot fill:#fff3e0
-    style Meta fill:#e1f5fe
 ```
 
 | Dimension | Few-Shot | Meta Prompting |
@@ -580,9 +569,6 @@ flowchart LR
     E --> F[Optimize Prompt]
     F --> B
     D -->|Yes| G[Deploy]
-
-    style A fill:#e1f5fe
-    style G fill:#e8f5e9
 ```
 
 **Common Optimization Strategies**:
@@ -790,10 +776,6 @@ flowchart TD
     C --> G[Basic Template]
     E --> G
     F --> G
-
-    style C fill:#e1f5fe
-    style E fill:#fff3e0
-    style F fill:#f3e5f5
 ```
 
 ### Next Steps
