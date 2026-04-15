@@ -308,7 +308,16 @@ This tutorial is based on the following source documents from the `ai-engineerin
 
 ## Changelog
 
-### Version 1.0.0 (2025-04-14)
+### Version 1.0.1 (2026-04-15)
+
+**Date Sync Update**
+
+- Updated version date from 2025-04-14 to 2026-04-15
+- Updated Last Updated timestamp to April 15, 2026
+
+---
+
+### Version 1.0.0 (2026-04-15)
 
 **Initial Release**
 
@@ -375,6 +384,6 @@ Special thanks to all who have shared their knowledge and made this field access
 
 ---
 
-*Last Updated: April 14, 2025*
+*Last Updated: April 15, 2026*
 
 *For the latest version, check the repository at `/home/yuexiaoliang/projects/docs/prompt-engineering-learning/`*
