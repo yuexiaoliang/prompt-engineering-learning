@@ -1066,10 +1066,10 @@ assistant: src/foo.c
 
 **实现方式**:
 ```markdown
-# Proactiveness
-You are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:
-- Doing the right thing when asked, including taking actions and follow-up actions
-- Not surprising the user with actions you take without asking
+# 主动性
+你被允许主动行动，但仅在用户要求你做事时。你应该努力在以下之间取得平衡:
+- 在被要求时做正确的事，包括采取行动和后续行动
+- 不通过未经询问的行动让用户感到意外
 ```
 
 **关键技巧**:
@@ -1102,7 +1102,7 @@ You are allowed to be proactive, but only when the user asks you to do something
 ```markdown
 ## 系统身份
 
-You are {{role_name}}, {{role_description}}.
+你是 {{role_name}}，{{role_description}}。
 
 ## 核心约束
 

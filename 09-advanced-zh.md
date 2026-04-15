@@ -205,7 +205,7 @@ flowchart TB
 ```xml
 <available_skills>
   <skill>
-    <name>skill-name</name>
+    <name>技能名称</name>
     <description>技能描述</description>
     <location>file:///path/to/skill/SKILL.md</location>
   </skill>
@@ -312,11 +312,11 @@ flowchart LR
 ```mermaid
 flowchart TB
     subgraph "Dynamic Variable Resolution"
-        T[Template<br/>"Hello {{user.name}}"]
+        T[Template<br/>"你好 {{user.name}}"]
         C[Context<br/>{user: {name: "Alice"}}]
         R[Resolver]
-        O[Output<br/>"Hello Alice"]
-        
+        O[Output<br/>"你好 Alice"]
+
         T --> R
         C --> R
         R --> O
