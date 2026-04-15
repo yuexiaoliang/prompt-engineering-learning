@@ -49,11 +49,6 @@ flowchart TD
     Chaining --> Output
     CoTAdv --> Output
 
-    style Start fill:#e3f2fd
-    style Output fill:#e8f5e9
-    style ReAct fill:#fff3e0
-    style ToT fill:#fff3e0
-    style Chaining fill:#fff3e0
 ```
 
 ### Decision Tree Walkthrough
@@ -286,7 +281,6 @@ flowchart LR
     C -.->|Block| X
     E -.->|Block| X
 
-    style X fill:#ffebee
 ```
 
 **Output Validation**

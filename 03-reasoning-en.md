@@ -29,8 +29,6 @@ flowchart LR
     D --> E[Step 4: Verify]
     E --> F[Final Answer]
 
-    style A fill:#e3f2fd
-    style F fill:#e8f5e9
 ```
 
 ### Few-Shot CoT Template
@@ -201,9 +199,6 @@ graph TD
     J --> L[Final Answer]
     K --> A
 
-    style A fill:#fff3e0
-    style L fill:#e8f5e9
-    style K fill:#ffebee
 ```
 
 ### Implementation Steps
@@ -296,8 +291,6 @@ flowchart TD
     J --> K{Most Frequent?}
     K --> L[Final Answer]
 
-    style A fill:#e3f2fd
-    style L fill:#e8f5e9
 ```
 
 ### Implementation
@@ -374,10 +367,6 @@ flowchart LR
     C --> D[Identify Errors]
     D --> E[Improved Answer]
 
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#fce4ec
-    style E fill:#e8f5e9
 ```
 
 ### Template Structure
@@ -506,13 +495,6 @@ flowchart TD
     K --> O[Advanced Templates]
     L --> O
 
-    style A fill:#e3f2fd
-    style C fill:#e8f5e9
-    style E fill:#e8f5e9
-    style G fill:#fff3e0
-    style I fill:#fff3e0
-    style K fill:#fce4ec
-    style L fill:#fce4ec
 ```
 
 ### Quick Reference Guide

@@ -67,10 +67,6 @@ flowchart TD
     X --> Z[部署测试]
     Y --> Z
 
-    style A fill:#e3f2fd
-    style Z fill:#e8f5e9
-    style K fill:#fff3e0
-    style M fill:#fff3e0
 ```
 
 ### 决策节点说明
