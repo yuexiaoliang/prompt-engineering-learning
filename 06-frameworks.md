@@ -216,9 +216,9 @@ def task_execution(self) -> SystemPromptResult | StandardPromptResult:
 
 Claude Code uses sophisticated multi-agent orchestration with specialized sub-agents. The system emphasizes context engineering over prompt engineering.
 
-### Research Lead Agent System Prompt
+> **来源说明**：以下 Claude Code 系统提示内容基于 2025 年至 2026 年间多次泄露事件的社区分析，包括 [The Verge 的报道](https://www.theverge.com/ai-artificial-intelligence/904776/anthropic-claude-source-code-leak)和 [IDE.com 的架构分析](https://ide.com/i-analyzed-claude-codes-leaked-source-heres-how-anthropics-ai-agent-actually-works/)。这些文件不以 `RESEARCH_LEAD_AGENT.md` 等形式存在于 Anthropic 官方仓库中。
 
-**Source**: [Research Lead Agent](https://github.com/anthropics/claude-code/blob/main/RESEARCH_LEAD_AGENT.md)
+### Research Lead Agent System Prompt
 
 ```markdown
 ## System Prompt
@@ -279,8 +279,6 @@ You are an elite technical research lead. Your goal is to deeply understand the 
 ```
 
 ### Research Subagent System Prompt
-
-**Source**: [Research Subagent](https://github.com/anthropics/claude-code/blob/main/RESEARCH_SUBAGENT.md)
 
 ```markdown
 ## System Prompt
