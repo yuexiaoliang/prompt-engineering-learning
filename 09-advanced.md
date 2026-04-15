@@ -1,6 +1,6 @@
 # Chapter 9: Advanced Topics
 
-[中文版](09-advanced-zh.md)
+[中文版](zh/09-advanced.md)
 
 This chapter explores advanced prompt engineering concepts including multi-agent orchestration patterns, skills systems, dynamic prompt building, and model selection strategies. These topics represent the cutting edge of AI system design, where multiple specialized agents collaborate to solve complex problems.
 

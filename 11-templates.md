@@ -1,6 +1,6 @@
 # Chapter 11: Prompt Template Library
 
-[中文版](11-templates-zh.md)
+[中文版](zh/11-templates.md)
 
 This chapter provides a comprehensive collection of reusable prompt templates for common AI tasks. Each template includes a purpose description, full example, and implementation notes.
 

@@ -1,6 +1,6 @@
 # Chapter 1: Introduction
 
-> [中文版](01-introduction-zh.md)
+> [中文版](zh/01-introduction.md)
 
 ---
 
@@ -285,8 +285,8 @@ You're now ready to begin your journey into the art and science of Prompt Engine
 
 ## Next Steps
 
-→ Continue to [Chapter 2: Basic Prompting](./02-basics-en.md)
+→ Continue to [Chapter 2: Basic Prompting](./02-basics.md)
 
 Or jump to:
-- [Chapter 11: Template Library](./11-templates-en.md) for ready-to-use prompts
-- [Chapter 12: Cheatsheet](./12-cheatsheet-en.md) for quick reference
+- [Chapter 11: Template Library](./11-templates.md) for ready-to-use prompts
+- [Chapter 12: Cheatsheet](./12-cheatsheet.md) for quick reference

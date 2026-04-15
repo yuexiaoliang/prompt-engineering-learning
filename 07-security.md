@@ -1,6 +1,6 @@
 # Chapter 7: Security & Defense
 
-[中文版](07-security-zh.md)
+[中文版](zh/07-security.md)
 
 ---
 

@@ -1,4 +1,4 @@
-[中文版](06-frameworks-zh.md)
+[中文版](zh/06-frameworks.md)
 
 # Chapter 6: Framework Analysis
 

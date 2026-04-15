@@ -1,4 +1,4 @@
-[English Version](10-case-studies-en.md)
+[English Version](../10-case-studies.md)
 
 # 第 10 章：实战案例
 

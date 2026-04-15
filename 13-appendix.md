@@ -1,6 +1,6 @@
 # Chapter 13: Appendix
 
-[中文版](13-appendix-zh.md)
+[中文版](zh/13-appendix.md)
 
 ---
 

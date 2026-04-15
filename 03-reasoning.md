@@ -1,6 +1,6 @@
 # Chapter 3: Reasoning Enhancement
 
-> [中文版](03-reasoning-zh.md)
+> [中文版](zh/03-reasoning.md)
 
 ---
 
@@ -549,11 +549,11 @@ These techniques transform language models from simple pattern matchers into sop
 
 ## Next Steps
 
-→ Continue to [Chapter 4: Agents & Tools](./04-agents-tools-en.md)
+→ Continue to [Chapter 4: Agents & Tools](./04-agents-tools.md)
 
 Or review:
-- [Chapter 2: Basic Prompting](./02-basics-en.md) for foundational techniques
-- [Chapter 11: Template Library](./11-templates-en.md) for ready-to-use prompts
+- [Chapter 2: Basic Prompting](./02-basics.md) for foundational techniques
+- [Chapter 11: Template Library](./11-templates.md) for ready-to-use prompts
 
 ---
 

@@ -1,6 +1,6 @@
 # Prompt Engineering: From Zero to Mastery
 
-> [中文版](README-zh.md)
+> [中文版](zh/README.md)
 
 ---
 
@@ -30,19 +30,19 @@ flowchart LR
 
 | Stage | Chapter | Duration | For |
 |-------|---------|----------|-----|
-| 🟢 Intro | [Ch.1: Introduction](./01-introduction-en.md) | 30 min | Everyone |
-| 🔵 Basics | [Ch.2: Basic Prompting](./02-basics-en.md) | 1 hour | Beginners |
-| 🟡 Advanced | [Ch.3: Reasoning](./03-reasoning-en.md) | 1.5 hours | Intermediate |
-| 🟠 Advanced | [Ch.4: Agents & Tools](./04-agents-tools-en.md) | 2 hours | Intermediate |
-| 🟣 Frameworks | [Ch.5: Context Engineering](./05-context-engineering-en.md) | 1.5 hours | Developers |
-| 🔴 Frameworks | [Ch.6: Framework Analysis](./06-frameworks-en.md) | 2 hours | Developers |
-| 🩷 Security | [Ch.7: Security & Defense](./07-security-en.md) | 1.5 hours | Everyone |
-| 🩵 Production | [Ch.8: Production Practices](./08-production-en.md) | 2 hours | Engineers |
-| 🟤 Expert | [Ch.9: Advanced Topics](./09-advanced-en.md) | 2 hours | Experts |
-| ⚪ Practice | [Ch.10: Case Studies](./10-case-studies-en.md) | 3 hours | Everyone |
-| 📎 Templates | [Ch.11: Template Library](./11-templates-en.md) | Reference | Everyone |
-| 📋 Cheatsheet | [Ch.12: Cheatsheet](./12-cheatsheet-en.md) | Reference | Everyone |
-| 📚 Appendix | [Ch.13: Appendix](./13-appendix-en.md) | Reference | Everyone |
+| 🟢 Intro | [Ch.1: Introduction](./01-introduction.md) | 30 min | Everyone |
+| 🔵 Basics | [Ch.2: Basic Prompting](./02-basics.md) | 1 hour | Beginners |
+| 🟡 Advanced | [Ch.3: Reasoning](./03-reasoning.md) | 1.5 hours | Intermediate |
+| 🟠 Advanced | [Ch.4: Agents & Tools](./04-agents-tools.md) | 2 hours | Intermediate |
+| 🟣 Frameworks | [Ch.5: Context Engineering](./05-context-engineering.md) | 1.5 hours | Developers |
+| 🔴 Frameworks | [Ch.6: Framework Analysis](./06-frameworks.md) | 2 hours | Developers |
+| 🩷 Security | [Ch.7: Security & Defense](./07-security.md) | 1.5 hours | Everyone |
+| 🩵 Production | [Ch.8: Production Practices](./08-production.md) | 2 hours | Engineers |
+| 🟤 Expert | [Ch.9: Advanced Topics](./09-advanced.md) | 2 hours | Experts |
+| ⚪ Practice | [Ch.10: Case Studies](./10-case-studies.md) | 3 hours | Everyone |
+| 📎 Templates | [Ch.11: Template Library](./11-templates.md) | Reference | Everyone |
+| 📋 Cheatsheet | [Ch.12: Cheatsheet](./12-cheatsheet.md) | Reference | Everyone |
+| 📚 Appendix | [Ch.13: Appendix](./13-appendix.md) | Reference | Everyone |
 
 ---
 
@@ -50,34 +50,35 @@ flowchart LR
 
 ```
 prompt-engineering-learning/
-├── README-zh.md                    ← Chinese Index
-├── README-en.md                    ← This file (English Index)
-├── 01-introduction-zh.md           ← 第 1 章：导论
-├── 01-introduction-en.md           ← Ch.1: Introduction
-├── 02-basics-zh.md                 ← 第 2 章：基础 Prompting
-├── 02-basics-en.md                 ← Ch.2: Basic Prompting
-├── 03-reasoning-zh.md              ← 第 3 章：推理增强
-├── 03-reasoning-en.md              ← Ch.3: Reasoning
-├── 04-agents-tools-zh.md           ← 第 4 章：Agent 与工具
-├── 04-agents-tools-en.md           ← Ch.4: Agents & Tools
-├── 05-context-engineering-zh.md    ← 第 5 章：上下文工程
-├── 05-context-engineering-en.md    ← Ch.5: Context Engineering
-├── 06-frameworks-zh.md             ← 第 6 章：框架分析
-├── 06-frameworks-en.md             ← Ch.6: Frameworks
-├── 07-security-zh.md               ← 第 7 章：安全防御
-├── 07-security-en.md               ← Ch.7: Security
-├── 08-production-zh.md             ← 第 8 章：生产实践
-├── 08-production-en.md             ← Ch.8: Production
-├── 09-advanced-zh.md               ← 第 9 章：高级专题
-├── 09-advanced-en.md               ← Ch.9: Advanced
-├── 10-case-studies-zh.md           ← 第 10 章：实战案例
-├── 10-case-studies-en.md           ← Ch.10: Case Studies
-├── 11-templates-zh.md              ← 第 11 章：模板库
-├── 11-templates-en.md              ← Ch.11: Templates
-├── 12-cheatsheet-zh.md             ← 第 12 章：速查表
-├── 12-cheatsheet-en.md             ← Ch.12: Cheatsheet
-├── 13-appendix-zh.md               ← 第 13 章：附录
-└── 13-appendix-en.md               ← Ch.13: Appendix
+├── README.md                       ← This file (English Index)
+├── 01-introduction.md              ← Ch.1: Introduction
+├── 02-basics.md                    ← Ch.2: Basic Prompting
+├── 03-reasoning.md                 ← Ch.3: Reasoning
+├── 04-agents-tools.md              ← Ch.4: Agents & Tools
+├── 05-context-engineering.md       ← Ch.5: Context Engineering
+├── 06-frameworks.md                ← Ch.6: Frameworks
+├── 07-security.md                  ← Ch.7: Security
+├── 08-production.md                ← Ch.8: Production
+├── 09-advanced.md                  ← Ch.9: Advanced
+├── 10-case-studies.md              ← Ch.10: Case Studies
+├── 11-templates.md                 ← Ch.11: Templates
+├── 12-cheatsheet.md                ← Ch.12: Cheatsheet
+├── 13-appendix.md                  ← Ch.13: Appendix
+└── zh/
+    ├── README.md                   ← Chinese Index
+    ├── 01-introduction.md          ← 第 1 章：导论
+    ├── 02-basics.md                ← 第 2 章：基础 Prompting
+    ├── 03-reasoning.md             ← 第 3 章：推理增强
+    ├── 04-agents-tools.md          ← 第 4 章：Agent 与工具
+    ├── 05-context-engineering.md   ← 第 5 章：上下文工程
+    ├── 06-frameworks.md            ← 第 6 章：框架分析
+    ├── 07-security.md              ← 第 7 章：安全防御
+    ├── 08-production.md            ← 第 8 章：生产实践
+    ├── 09-advanced.md              ← 第 9 章：高级专题
+    ├── 10-case-studies.md          ← 第 10 章：实战案例
+    ├── 11-templates.md             ← 第 11 章：模板库
+    ├── 12-cheatsheet.md            ← 第 12 章：速查表
+    └── 13-appendix.md              ← 第 13 章：附录
 ```
 
 ---

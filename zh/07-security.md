@@ -1,6 +1,6 @@
 # 第 7 章：安全与防御
 
-[English Version](07-security-en.md)
+[English Version](../07-security.md)
 
 ---
 

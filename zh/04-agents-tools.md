@@ -1,6 +1,6 @@
 # 第 4 章：Agent 与工具
 
-> [English Version](04-agents-tools-en.md)
+> [English Version](../04-agents-tools.md)
 
 ---
 
@@ -958,9 +958,9 @@ flowchart TD
 
 ### 相关章节
 
-- [第 3 章：推理增强](./03-reasoning-zh.md) - Chain-of-Thought 和 Tree of Thoughts
-- [第 5 章：上下文工程](./05-context-engineering-zh.md) - Agent 上下文设计
-- [第 6 章：安全与防御](./07-security-zh.md) - Prompt 注入防御
+- [第 3 章：推理增强](./03-reasoning.md) - Chain-of-Thought 和 Tree of Thoughts
+- [第 5 章：上下文工程](./05-context-engineering.md) - Agent 上下文设计
+- [第 6 章：安全与防御](./07-security.md) - Prompt 注入防御
 
 ---
 

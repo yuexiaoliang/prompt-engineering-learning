@@ -1,4 +1,4 @@
-[English Version](01-introduction-en.md)
+[English Version](../01-introduction.md)
 
 # 第 1 章：导论
 
@@ -515,7 +515,7 @@ flowchart TD
 
 ### 下一步
 
-准备好开始了吗？请继续阅读 [第 2 章：基础 Prompting](./02-basics-zh.md)，学习 Zero-Shot、Few-Shot 和 Meta Prompting 等核心技术。
+准备好开始了吗？请继续阅读 [第 2 章：基础 Prompting](./02-basics.md)，学习 Zero-Shot、Few-Shot 和 Meta Prompting 等核心技术。
 
 ---
 
@@ -550,4 +550,4 @@ flowchart TD
 
 ---
 
-*下一章：[第 2 章：基础 Prompting](./02-basics-zh.md)*
+*下一章：[第 2 章：基础 Prompting](./02-basics.md)*

@@ -1,6 +1,6 @@
 # 第 13 章：附录
 
-> [English Version](13-appendix-en.md)
+> [English Version](../13-appendix.md)
 
 ---
 

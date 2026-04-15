@@ -1,6 +1,6 @@
 # Chapter 8: Production Practices
 
-[中文版](08-production-zh.md)
+[中文版](zh/08-production.md)
 
 ## Table of Contents
 

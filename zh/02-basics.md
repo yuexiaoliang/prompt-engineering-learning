@@ -1,6 +1,6 @@
 # 第 2 章：基础 Prompting
 
-> [English Version](02-basics-en.md)
+> [English Version](../02-basics.md)
 
 ---
 
@@ -781,9 +781,9 @@ flowchart TD
 
 完成本章后，建议继续学习：
 
-1. **[第 3 章：推理增强](./03-reasoning-zh.md)** - 学习 Chain-of-Thought、Tree of Thoughts 等推理增强技术
-2. **[第 11 章：模板库](./11-templates-zh.md)** - 查看更多实用 Prompt 模板
-3. **[第 12 章：速查表](./12-cheatsheet-zh.md)** - 快速参考各种技术要点
+1. **[第 3 章：推理增强](./03-reasoning.md)** - 学习 Chain-of-Thought、Tree of Thoughts 等推理增强技术
+2. **[第 11 章：模板库](./11-templates.md)** - 查看更多实用 Prompt 模板
+3. **[第 12 章：速查表](./12-cheatsheet.md)** - 快速参考各种技术要点
 
 ---
 
@@ -796,9 +796,9 @@ flowchart TD
 
 ### 相关章节
 
-- [第 3 章：推理增强](./03-reasoning-zh.md) - Chain-of-Thought 和 Tree of Thoughts
-- [第 11 章：模板库](./11-templates-zh.md) - 更多实用模板
-- [第 12 章：速查表](./12-cheatsheet-zh.md) - 快速参考
+- [第 3 章：推理增强](./03-reasoning.md) - Chain-of-Thought 和 Tree of Thoughts
+- [第 11 章：模板库](./11-templates.md) - 更多实用模板
+- [第 12 章：速查表](./12-cheatsheet.md) - 快速参考
 
 ---
 

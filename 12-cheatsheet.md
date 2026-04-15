@@ -1,6 +1,6 @@
 # Chapter 12: Prompt Engineering Cheatsheet
 
-[中文版](12-cheatsheet-zh.md)
+[中文版](zh/12-cheatsheet.md)
 
 A comprehensive quick reference guide for prompt engineering techniques, decision frameworks, and implementation patterns.
 

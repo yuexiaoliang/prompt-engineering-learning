@@ -1,4 +1,4 @@
-[English Version](11-templates-en.md)
+[English Version](../11-templates.md)
 
 # 第 11 章：模板库
 

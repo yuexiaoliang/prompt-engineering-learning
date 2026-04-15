@@ -1,4 +1,4 @@
-[English Version](12-cheatsheet-en.md)
+[English Version](../12-cheatsheet.md)
 
 # 第 12 章：速查表
 

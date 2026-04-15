@@ -1,6 +1,6 @@
 # Chapter 5: Context Engineering
 
-[中文版](05-context-engineering-zh.md)
+[中文版](zh/05-context-engineering.md)
 
 ## Table of Contents
 

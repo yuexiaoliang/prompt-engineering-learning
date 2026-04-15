@@ -1,6 +1,6 @@
 # 第 3 章：推理增强
 
-> [English Version](03-reasoning-en.md)
+> [English Version](../03-reasoning.md)
 
 ---
 
@@ -846,9 +846,9 @@ flowchart LR
 
 完成本章后，建议继续学习：
 
-1. **[第 4 章：Agent 与工具使用](./04-agents-tools-zh.md)** - 学习 ReAct、Function Calling 等 Agent 技术
-2. **[第 5 章：上下文工程](./05-context-engineering-zh.md)** - 深入了解上下文管理和记忆机制
-3. **[第 11 章：模板库](./11-templates-zh.md)** - 查看更多推理类 Prompt 模板
+1. **[第 4 章：Agent 与工具使用](./04-agents-tools.md)** - 学习 ReAct、Function Calling 等 Agent 技术
+2. **[第 5 章：上下文工程](./05-context-engineering.md)** - 深入了解上下文管理和记忆机制
+3. **[第 11 章：模板库](./11-templates.md)** - 查看更多推理类 Prompt 模板
 
 ---
 
@@ -864,9 +864,9 @@ flowchart LR
 
 ### 相关章节
 
-- [第 2 章：基础 Prompting](./02-basics-zh.md) - Zero-Shot 和 Few-Shot 基础
-- [第 4 章：Agent 与工具使用](./04-agents-tools-zh.md) - ReAct 和工具调用
-- [第 11 章：模板库](./11-templates-zh.md) - 更多实用模板
+- [第 2 章：基础 Prompting](./02-basics.md) - Zero-Shot 和 Few-Shot 基础
+- [第 4 章：Agent 与工具使用](./04-agents-tools.md) - ReAct 和工具调用
+- [第 11 章：模板库](./11-templates.md) - 更多实用模板
 
 ---
 

@@ -1,4 +1,4 @@
-[English Version](09-advanced-en.md)
+[English Version](../09-advanced.md)
 
 # 第 9 章：高级专题
 

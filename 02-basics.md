@@ -1,6 +1,6 @@
 # Chapter 2: Basic Prompting
 
-> [中文版](02-basics-zh.md)
+> [中文版](zh/02-basics.md)
 
 ---
 
@@ -782,9 +782,9 @@ flowchart TD
 
 After completing this chapter, continue learning:
 
-1. **[Chapter 3: Reasoning Enhancement](./03-reasoning-en.md)** - Learn Chain-of-Thought, Tree of Thoughts, and other reasoning enhancement techniques
-2. **[Chapter 11: Template Library](./11-templates-en.md)** - View more practical Prompt templates
-3. **[Chapter 12: Cheatsheet](./12-cheatsheet-en.md)** - Quick reference for various technique points
+1. **[Chapter 3: Reasoning Enhancement](./03-reasoning.md)** - Learn Chain-of-Thought, Tree of Thoughts, and other reasoning enhancement techniques
+2. **[Chapter 11: Template Library](./11-templates.md)** - View more practical Prompt templates
+3. **[Chapter 12: Cheatsheet](./12-cheatsheet.md)** - Quick reference for various technique points
 
 ---
 
@@ -797,9 +797,9 @@ After completing this chapter, continue learning:
 
 ### Related Chapters
 
-- [Chapter 3: Reasoning Enhancement](./03-reasoning-en.md) - Chain-of-Thought and Tree of Thoughts
-- [Chapter 11: Template Library](./11-templates-en.md) - More practical templates
-- [Chapter 12: Cheatsheet](./12-cheatsheet-en.md) - Quick reference
+- [Chapter 3: Reasoning Enhancement](./03-reasoning.md) - Chain-of-Thought and Tree of Thoughts
+- [Chapter 11: Template Library](./11-templates.md) - More practical templates
+- [Chapter 12: Cheatsheet](./12-cheatsheet.md) - Quick reference
 
 ---
 

@@ -1,6 +1,6 @@
 # Chapter 4: Agents & Tools
 
-[中文版](04-agents-tools-zh.md)
+[中文版](zh/04-agents-tools.md)
 
 ## Table of Contents
 

@@ -1,6 +1,6 @@
 # Chapter 10: Case Studies
 
-[中文版](10-case-studies-zh.md)
+[中文版](zh/10-case-studies.md)
 
 ---
 
