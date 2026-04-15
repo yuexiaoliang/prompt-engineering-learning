@@ -205,22 +205,22 @@ flowchart TD
 ```markdown
 ## 情感分类
 
-Classify the sentiment of the following text as POSITIVE, NEGATIVE, or NEUTRAL.
+将以下文本的情感分类为 POSITIVE（正面）、NEGATIVE（负面）或 NEUTRAL（中性）。
 
-Text: {{text}}
+文本: {{text}}
 
-Sentiment:
+情感:
 ```
 
 **变体 - 多标签分类**
 ```markdown
 ## 主题分类
 
-Classify the following text into one or more categories: [Technology, Sports, Politics, Entertainment, Business]
+将以下文本分类为一个或多个类别: [Technology, Sports, Politics, Entertainment, Business]
 
-Text: {{text}}
+文本: {{text}}
 
-Categories (comma-separated):
+类别 (逗号分隔):
 ```
 
 ### B. 提取任务模板
@@ -228,15 +228,15 @@ Categories (comma-separated):
 ```markdown
 ## 信息提取
 
-Extract the following information from the text:
-- Person names
-- Organizations
-- Locations
-- Dates
+从文本中提取以下信息:
+- 人物姓名
+- 组织机构
+- 地点
+- 日期
 
-Text: {{text}}
+文本: {{text}}
 
-Format your response as JSON:
+请以 JSON 格式返回:
 {
   "persons": [],
   "organizations": [],
@@ -249,11 +249,11 @@ Format your response as JSON:
 ```markdown
 ## 实体关系提取
 
-Extract entities and their relationships from the text.
+从文本中提取实体及其关系。
 
-Text: {{text}}
+文本: {{text}}
 
-Output format:
+输出格式:
 {
   "entities": [
     {"id": "e1", "type": "PERSON", "name": "..."}
@@ -269,20 +269,20 @@ Output format:
 ```markdown
 ## 代码生成
 
-You are an expert {{language}} developer.
+你是一位 {{language}} 专家开发者。
 
-Task: {{task_description}}
+任务: {{task_description}}
 
-Requirements:
+要求:
 - {{requirement_1}}
 - {{requirement_2}}
-- Include error handling
-- Add comments explaining complex logic
-- Follow {{language}} best practices
+- 包含错误处理
+- 添加注释解释复杂逻辑
+- 遵循 {{language}} 最佳实践
 
-Provide the code in a code block:
+请在代码块中提供代码:
 ```{{language}}
-[Your code here]
+[你的代码]
 ```
 ```
 
@@ -290,16 +290,16 @@ Provide the code in a code block:
 ```markdown
 ## 测试驱动代码生成
 
-Write {{language}} code that passes the following tests:
+编写 {{language}} 代码，使其通过以下测试:
 
 ```{{language}}
 {{test_code}}
 ```
 
-Requirements:
-- Implement the minimal code to pass all tests
-- Do not modify the tests
-- Use clean, readable code
+要求:
+- 实现最小代码以通过所有测试
+- 不要修改测试
+- 使用清晰、可读的代码
 ```
 
 ### D. 总结模板
@@ -307,41 +307,41 @@ Requirements:
 ```markdown
 ## 文本总结
 
-Summarize the following text in {{num_sentences}} sentences.
+用 {{num_sentences}} 句话总结以下文本。
 
-Focus on:
-- Main points
-- Key findings
-- Important details
+重点关注:
+- 主要观点
+- 关键发现
+- 重要细节
 
-Text:
+文本:
 {{text}}
 
-Summary:
+总结:
 ```
 
 **变体 - 结构化总结**
 ```markdown
 ## 结构化总结
 
-Provide a structured summary of the following text.
+提供以下文本的结构化总结。
 
-Text: {{text}}
+文本: {{text}}
 
-Output format:
+输出格式:
 ## Executive Summary
-[2-3 sentence overview]
+[2-3 句概述]
 
 ## Key Points
-- [Point 1]
-- [Point 2]
+- [要点 1]
+- [要点 2]
 
 ## Action Items
-- [Action 1]
-- [Action 2]
+- [行动 1]
+- [行动 2]
 
 ## Questions Raised
-- [Question 1]
+- [问题 1]
 ```
 
 ### E. 推理任务模板
@@ -349,16 +349,16 @@ Output format:
 ```markdown
 ## 逐步推理
 
-Solve the following problem step by step.
+逐步解决以下问题。
 
-Problem: {{problem}}
+问题: {{problem}}
 
-Show your work:
-1. [First step]
-2. [Second step]
+展示你的推理过程:
+1. [第一步]
+2. [第二步]
 ...
 
-Final Answer: [Your answer]
+最终答案: [你的答案]
 ```
 
 ### F. Agent 任务模板
@@ -366,20 +366,20 @@ Final Answer: [Your answer]
 ```markdown
 ## Agent 任务执行
 
-You are {{agent_role}}. {{agent_description}}
+你是 {{agent_role}}。{{agent_description}}
 
-Task: {{task}}
+任务: {{task}}
 
-Available tools:
+可用工具:
 {{tools}}
 
-Follow this format:
-Thought: [Your reasoning]
-Action: [Tool name]
-Action Input: [Tool parameters]
-Observation: [Tool result]
+遵循以下格式:
+Thought: [你的推理]
+Action: [工具名称]
+Action Input: [工具参数]
+Observation: [工具结果]
 ...
-Final Answer: [Your final answer]
+Final Answer: [你的最终答案]
 ```
 
 ---
@@ -643,7 +643,7 @@ flowchart LR
   "step": 3,
   "thought": "我需要搜索更多信息...",
   "action": "web_search",
-  "action_input": "Python async best practices",
+  "action_input": "Python async 最佳实践",
   "observation": "[搜索结果摘要]"
 }
 ```
@@ -901,9 +901,9 @@ def route_request(request):
 
 # 对比指标
 metrics = {
-    "accuracy": compare(v1_accuracy, v2_accuracy),
-    "latency": compare(v1_latency, v2_latency),
-    "cost": compare(v1_cost, v2_cost)
+    "accuracy": compare(v1_accuracy, v2_accuracy),  # 准确率对比
+    "latency": compare(v1_latency, v2_latency),     # 延迟对比
+    "cost": compare(v1_cost, v2_cost)               # 成本对比
 }
 ```
 
@@ -943,10 +943,10 @@ flowchart TD
 
 **实现方式**:
 ```markdown
-# Tone and style
-You should be concise, direct, and to the point.
-You MUST answer concisely with fewer than 4 lines (not including tool use or code generation), unless user asks for detail.
-IMPORTANT: You should minimize output tokens as much as possible while maintaining helpfulness, quality, and accuracy.
+# 语气和风格
+你应该简洁、直接、切中要点。
+你必须在少于 4 行内简洁回答（不包括工具使用或代码生成），除非用户要求详细说明。
+重要: 你应该在保持有用性、质量和准确性的同时，尽可能减少输出 Token。
 ```
 
 **关键技巧**:
@@ -965,11 +965,11 @@ IMPORTANT: You should minimize output tokens as much as possible while maintaini
 
 **实现方式**:
 ```markdown
-# Task Management
-You have access to the TodoWrite tools to help you manage and plan tasks. Use these tools VERY frequently to ensure that you are tracking your tasks and giving the user visibility into your progress.
-These tools are also EXTREMELY helpful for planning tasks, and for breaking down larger complex tasks into smaller steps. If you do not use this tool when planning, you may forget to do important tasks - and that is unacceptable.
+# 任务管理
+你可以使用 TodoWrite 工具来帮助管理和规划任务。请非常频繁地使用这些工具，以确保你在跟踪任务并让用户了解你的进度。
+这些工具对于规划任务以及将大型复杂任务分解为较小步骤也非常有帮助。如果你在规划时不使用此工具，可能会忘记执行重要任务，这是不可接受的。
 
-It is critical that you mark todos as completed as soon as you are done with a task. Do not batch up multiple tasks before marking them as completed.
+完成任务后立即标记为完成是至关重要的。不要在标记完成之前批量处理多个任务。
 ```
 
 **关键技巧**:
@@ -988,10 +988,10 @@ It is critical that you mark todos as completed as soon as you are done with a t
 
 **实现方式**:
 ```markdown
-# Tool usage policy
-- When doing file search, prefer to use the Task tool in order to reduce context usage.
-- You should proactively use the Task tool with specialized agents when the task at hand matches the agent's description.
-- You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance.
+# 工具使用策略
+- 进行文件搜索时，优先使用 Task 工具以减少上下文使用。
+- 当手头任务与代理描述匹配时，你应该主动使用 Task 工具配合专业代理。
+- 你有能力在单个响应中调用多个工具。当请求多个独立信息时，将工具调用批量处理以获得最佳性能。
 ```
 
 **关键技巧**:
@@ -1010,14 +1010,14 @@ It is critical that you mark todos as completed as soon as you are done with a t
 
 **实现方式**:
 ```markdown
-# Following conventions
-When making changes to files, first understand the file's code conventions. Mimic code style, use existing libraries and utilities, and follow existing patterns.
-- NEVER assume that a given library is available, even if it is well known.
-- When you create a new component, first look at existing components to see how they're written.
-- Always follow security best practices. Never introduce code that exposes or logs secrets and keys.
+# 遵循规范
+修改文件时，首先理解文件的代码规范。模仿代码风格，使用现有库和工具，遵循现有模式。
+- 永远不要假设某个库可用，即使它很知名。
+- 创建新组件时，首先查看现有组件了解它们是如何编写的。
+- 始终遵循安全最佳实践。绝不引入暴露或记录密钥和机密的代码。
 
-# Code style
-- IMPORTANT: DO NOT ADD ***ANY*** COMMENTS unless asked
+# 代码风格
+- 重要: 除非要求，否则不要添加***任何***注释
 ```
 
 **关键技巧**:
@@ -1036,16 +1036,16 @@ When making changes to files, first understand the file's code conventions. Mimi
 
 **实现方式**:
 ```markdown
-Here are some examples to demonstrate appropriate verbosity:
+以下是展示适当详细程度的示例:
 <example>
 user: 2 + 2
 assistant: 4
 </example>
 
 <example>
-user: what files are in the directory src/?
-assistant: [runs ls and sees foo.c, bar.c, baz.c]
-user: which file contains the implementation of foo?
+user: src/ 目录中有哪些文件?
+assistant: [运行 ls 看到 foo.c, bar.c, baz.c]
+user: 哪个文件包含 foo 的实现?
 assistant: src/foo.c
 </example>
 ```

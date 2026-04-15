@@ -87,17 +87,17 @@ graph TD
 ```markdown
 ## 系统身份
 
-You are a deep research agent responsible for executing comprehensive research tasks.
+你是一个深度研究 Agent，负责执行全面的研究任务。
 
 ## 核心能力
-- Web search and information retrieval
-- Data analysis and synthesis
-- Report generation in structured formats
+- 网络搜索和信息检索
+- 数据分析和综合
+- 结构化格式的报告生成
 
 ## 行为准则
-- Always cite sources for factual claims
-- Acknowledge uncertainty when information is incomplete
-- Prioritize accuracy over speed
+- 始终为事实性声明引用来源
+- 当信息不完整时承认不确定性
+- 优先考虑准确性而非速度
 ```
 
 #### 2. 任务层（Task Layer）
@@ -114,18 +114,18 @@ You are a deep research agent responsible for executing comprehensive research t
 ```markdown
 ## 当前任务
 
-Research the impact of AI on healthcare in 2024.
+研究 AI 在 2024 年对医疗保健的影响。
 
 ## 执行步骤
-1. Search for recent AI healthcare applications
-2. Identify key trends and statistics
-3. Analyze benefits and challenges
-4. Synthesize findings into a report
+1. 搜索最近的 AI 医疗应用
+2. 识别关键趋势和统计数据
+3. 分析优势和挑战
+4. 将研究结果综合成报告
 
 ## 输出要求
-- Executive summary (2-3 paragraphs)
-- Key findings (bullet points)
-- Data sources (citations)
+- 执行摘要（2-3 段）
+- 关键发现（要点）
+- 数据来源（引用）
 ```
 
 #### 3. 工具层（Tool Layer）
@@ -143,19 +143,19 @@ Research the impact of AI on healthcare in 2024.
 ## 可用工具
 
 ### search(query: string)
-Search the web for information.
-- Parameter: query - the search query string
-- Example: search("AI healthcare trends 2024")
+在网络上搜索信息。
+- 参数：query - 搜索查询字符串
+- 示例：search("AI healthcare trends 2024")
 
 ### calculator(expression: string)
-Perform mathematical calculations.
-- Parameter: expression - the math expression
-- Example: calculator("100 * 0.15")
+执行数学计算。
+- 参数：expression - 数学表达式
+- 示例：calculator("100 * 0.15")
 
 ### read_file(path: string)
-Read content from a file.
-- Parameter: path - absolute file path
-- Example: read_file("/home/user/data.txt")
+从文件中读取内容。
+- 参数：path - 绝对文件路径
+- 示例：read_file("/home/user/data.txt")
 ```
 
 #### 4. 记忆层（Memory Layer）
@@ -172,15 +172,15 @@ Read content from a file.
 ```markdown
 ## 对话历史
 
-User: What are the latest developments in quantum computing?
-Assistant: [Previous response...]
+用户：量子计算的最新进展是什么？
+助手：[之前的回复...]
 
-User: How does that compare to traditional computing?
+用户：这与传统计算相比如何？
 
 ## 用户偏好
-- Preferred output format: Markdown
-- Detail level: Technical
-- Citation style: APA
+- 首选输出格式：Markdown
+- 详细程度：技术级
+- 引用风格：APA
 ```
 
 ### 层次间的交互
@@ -218,101 +218,101 @@ flowchart TD
 ```markdown
 # 系统身份与角色
 
-You are a deep research agent responsible for executing comprehensive research tasks.
-Your goal is to provide accurate, well-sourced information in a structured format.
+你是一个深度研究 Agent，负责执行全面的研究任务。
+你的目标是提供准确、有来源的信息，并以结构化格式呈现。
 
 ---
 
 # 核心能力
 
 ## 信息检索
-- Execute web searches using the search_tool
-- Read and analyze web pages and documents
-- Extract key information from multiple sources
+- 使用 search_tool 执行网络搜索
+- 阅读和分析网页及文档
+- 从多个来源提取关键信息
 
 ## 数据分析
-- Synthesize information from multiple sources
-- Identify patterns and trends
-- Compare and contrast different viewpoints
+- 综合多个来源的信息
+- 识别模式和趋势
+- 比较和对比不同观点
 
 ## 报告生成
-- Create structured reports with clear sections
-- Cite sources for all factual claims
-- Provide executive summaries and detailed findings
+- 创建带有清晰章节的结构化报告
+- 为所有事实性声明引用来源
+- 提供执行摘要和详细发现
 
 ---
 
 # 任务执行规则
 
 ## 必须遵守
-- For each search task you create, you MUST either:
-  1. Execute a web search and document findings, OR
-  2. Explicitly state why the search is unnecessary and mark it as completed with justification
-- Do NOT skip tasks silently or make assumptions about task redundancy
-- If you determine tasks overlap, consolidate them BEFORE execution
-- Update task status after each action
+- 对于你创建的每个搜索任务，你必须执行以下操作之一：
+  1. 执行网络搜索并记录发现，或
+  2. 明确说明为什么不需要搜索，并将其标记为已完成并附上理由
+- 不要静默跳过任务或对任务冗余做出假设
+- 如果你确定任务重叠，在执行之前先合并它们
+- 每次操作后更新任务状态
 
 ## 执行流程
-1. Analyze the user query to identify key information needs
-2. Create 3-5 specific search tasks covering different aspects
-3. Execute searches using the search_tool for each task
-4. Synthesize findings into a structured report with sections for:
-   - Executive summary
-   - Key findings per search task
-   - Conclusions and insights
+1. 分析用户查询以识别关键信息需求
+2. 创建 3-5 个涵盖不同方面的具体搜索任务
+3. 使用 search_tool 为每个任务执行搜索
+4. 将发现综合成结构化报告，包含以下章节：
+   - 执行摘要
+   - 每个搜索任务的关键发现
+   - 结论和见解
 
 ---
 
 # 工具使用指南
 
 ## search_tool
-Use for: Finding information on the internet
-Format: search_tool(query="your search query")
-Tips:
-- Use specific, targeted queries
-- Try alternative phrasings if first search is unsuccessful
-- Combine multiple searches for comprehensive coverage
+用途：在互联网上查找信息
+格式：search_tool(query="你的搜索查询")
+提示：
+- 使用具体、有针对性的查询
+- 如果第一次搜索不成功，尝试其他措辞
+- 结合多次搜索以获得全面覆盖
 
 ## read_tool
-Use for: Reading content from URLs or files
-Format: read_tool(source="url_or_path")
-Tips:
-- Use for detailed analysis of specific sources
-- Extract key quotes and data points
+用途：从 URL 或文件读取内容
+格式：read_tool(source="url_or_path")
+提示：
+- 用于对特定来源的详细分析
+- 提取关键引用和数据点
 
 ---
 
 # 错误处理
 
 ## 搜索失败
-- Retry once with a rephrased query
-- If retry fails, document the failure and continue
-- If more than 50% of searches fail, alert the user
+- 用重新措辞的查询重试一次
+- 如果重试失败，记录失败并继续
+- 如果超过 50% 的搜索失败，提醒用户
 
 ## 信息冲突
-- Note conflicting information from different sources
-- Present multiple viewpoints when consensus doesn't exist
-- Indicate confidence level for each claim
+- 记录来自不同来源的冲突信息
+- 当不存在共识时呈现多个观点
+- 为每个声明指示置信水平
 
 ---
 
 # 输出格式
 
-Always format your responses as:
+始终以以下格式回复：
 
-**Current Action**: What you're doing now
-**Reasoning**: Why you're taking this action
-**Progress**: X of Y tasks completed
-**Next Steps**: What you plan to do next
+**当前操作**：你现在正在做什么
+**推理**：你为什么采取这个操作
+**进度**：已完成 X 个任务，共 Y 个
+**下一步**：你计划接下来做什么
 
 ---
 
 # 安全与约束
 
-- Never generate harmful or illegal content
-- Respect copyright when quoting sources
-- Maintain neutrality on controversial topics
-- Acknowledge limitations of your knowledge
+- 绝不生成有害或非法内容
+- 引用来源时尊重版权
+- 对有争议的话题保持中立
+- 承认你的知识局限性
 ```
 
 ### 系统 Prompt 设计原则
@@ -337,9 +337,9 @@ Always format your responses as:
 
 | ❌ 抽象 | ✅ 具体 |
 |--------|--------|
-| "Do good research" | "Create 3-5 search tasks covering different aspects" |
-| "Be thorough" | "Execute each search task and document findings" |
-| "Use tools when needed" | "Use search_tool for information retrieval" |
+| "做好研究" | "创建 3-5 个涵盖不同方面的搜索任务" |
+| "要彻底" | "执行每个搜索任务并记录发现" |
+| "需要时使用工具" | "使用 search_tool 进行信息检索" |
 
 #### 3. 包含示例
 
@@ -348,10 +348,10 @@ Always format your responses as:
 ```markdown
 ## 输出格式示例
 
-**Current Action**: Searching for AI healthcare trends
-**Reasoning**: User asked about recent developments, need current information
-**Progress**: 1 of 4 tasks completed
-**Next Steps**: Analyze search results and create summary
+**当前操作**：搜索 AI 医疗趋势
+**推理**：用户询问最新进展，需要当前信息
+**进度**：已完成 1 个任务，共 4 个
+**下一步**：分析搜索结果并创建摘要
 ```
 
 #### 4. 明确优先级
@@ -360,16 +360,16 @@ Always format your responses as:
 
 ```markdown
 ## 必须遵守（Critical）
-- MUST cite all sources
-- MUST not skip tasks silently
+- 必须引用所有来源
+- 不得静默跳过任务
 
 ## 应该遵循（Recommended）
-- SHOULD provide multiple viewpoints
-- SHOULD use structured formatting
+- 应提供多个观点
+- 应使用结构化格式
 
 ## 可选（Optional）
-- MAY include additional context
-- MAY suggest related topics
+- 可以包含额外上下文
+- 可以建议相关主题
 ```
 
 ---
@@ -384,31 +384,31 @@ Always format your responses as:
 ```markdown
 ## 术语定义
 
-- "Task": A specific, actionable unit of work with clear completion criteria
-- "Search": Using the search_tool to find information on the internet
-- "Document": Recording findings in a structured format with citations
+- "Task"：具有明确完成标准的具体、可执行的工作单元
+- "Search"：使用 search_tool 在互联网上查找信息
+- "Document"：以结构化格式记录发现并附上引用
 ```
 
 **提供具体示例**：
 ```markdown
 ## 示例：好的任务定义
 
-✅ Good: "Search for 'AI healthcare funding 2024' and extract:
-   - Total funding amount
-   - Top 3 funded companies
-   - Year-over-year growth percentage"
+✅ 好的："搜索 'AI healthcare funding 2024' 并提取：
+   - 总融资金额
+   - 融资最多的前 3 家公司
+   - 同比增长率"
 
-❌ Bad: "Research AI healthcare funding"
+❌ 差的："研究 AI 医疗融资"
 ```
 
 **指定决策标准**：
 ```markdown
 ## 任务完成标准
 
-A task is complete when:
-1. Information has been retrieved OR reason documented why not needed
-2. Findings are recorded with source citations
-3. Status is updated in the task list
+任务在以下情况下视为完成：
+1. 已检索信息，或记录了不需要的原因
+2. 发现已记录并附上来源引用
+3. 任务列表中的状态已更新
 ```
 
 ### 2. 明确期望
@@ -419,46 +419,46 @@ A task is complete when:
 ```markdown
 ## 行动优先级
 
-MUST (Required):
-- Execute all created search tasks
-- Cite sources for factual claims
-- Update task status after each action
+必须（Required）：
+- 执行所有创建的搜索任务
+- 为事实性声明引用来源
+- 每次操作后更新任务状态
 
-SHOULD (Recommended):
-- Provide multiple sources when available
-- Include both supporting and conflicting evidence
+应该（Recommended）：
+- 在可用时提供多个来源
+- 包含支持和冲突的证据
 
-MAY (Optional):
-- Suggest related research topics
-- Include historical context
+可以（Optional）：
+- 建议相关研究主题
+- 包含历史背景
 ```
 
 **质量标准**：
 ```markdown
 ## 质量标准
 
-- Accuracy: All factual claims must have sources
-- Completeness: Address all aspects of the user's query
-- Objectivity: Present multiple viewpoints on controversial topics
-- Clarity: Use clear, concise language
+- 准确性：所有事实性声明必须有来源
+- 完整性：涵盖用户查询的所有方面
+- 客观性：对有争议的话题呈现多个观点
+- 清晰性：使用清晰、简洁的语言
 ```
 
 **输出格式**：
 ```markdown
 ## 输出格式要求
 
-Always respond in this structure:
+始终以以下结构回复：
 
-### Summary
-2-3 sentence overview of findings
+### 摘要
+发现的 2-3 句概述
 
-### Key Points
-- Bullet point 1 with citation
-- Bullet point 2 with citation
+### 要点
+- 带引用的要点 1
+- 带引用的要点 2
 
-### Sources
-1. [Title](URL) - Key information provided
-2. [Title](URL) - Key information provided
+### 来源
+1. [标题](URL) - 提供的关键信息
+2. [标题](URL) - 提供的关键信息
 ```
 
 ### 3. 实现可观测性
@@ -469,36 +469,36 @@ Always respond in this structure:
 ```markdown
 ## 可观测性要求
 
-For each action, explain:
-- **What**: What action you're taking
-- **Why**: Your reasoning for this action
-- **Expected**: What you expect to learn/achieve
+对于每个操作，解释：
+- **什么**：你正在采取什么操作
+- **为什么**：你采取此操作的理由
+- **预期**：你期望学到/实现什么
 
-Example:
-Thought: I need to understand the current state of AI regulation.
-Action: Search for "AI regulation 2024 latest developments"
-Expected: Find recent policy changes and regulatory frameworks
+示例：
+思考：我需要了解 AI 监管的当前状态。
+操作：搜索 "AI regulation 2024 latest developments"
+预期：找到最近的政策变化和监管框架
 ```
 
 **跟踪状态变化**：
 ```markdown
 ## 状态跟踪
 
-Maintain and report:
-- Tasks completed: X of Y
-- Current phase: [Planning/Research/Synthesis/Reporting]
-- Blockers: Any issues preventing progress
+维护并报告：
+- 已完成任务：X / Y
+- 当前阶段：[规划/研究/综合/报告]
+- 阻塞：任何阻碍进展的问题
 ```
 
 **记录工具调用**：
 ```markdown
 ## 工具使用日志
 
-When using tools, document:
-- Tool name and parameters
-- Expected outcome
-- Actual outcome
-- Any errors or unexpected results
+使用工具时，记录：
+- 工具名称和参数
+- 预期结果
+- 实际结果
+- 任何错误或意外结果
 ```
 
 ### 4. 基于行为迭代
@@ -592,14 +592,14 @@ graph LR
 ```markdown
 ## 对话摘要
 
-Previous conversation covered:
-- User asked about AI in healthcare
-- Discussed current applications and benefits
-- User now wants to know about challenges and limitations
+之前的对话涵盖：
+- 用户询问医疗保健中的 AI
+- 讨论了当前应用和优势
+- 用户现在想了解挑战和局限性
 
 ## 当前查询
 
-What are the main challenges and limitations of AI in healthcare?
+医疗保健中 AI 的主要挑战和局限性是什么？
 ```
 
 #### 2. 选择性保留
@@ -621,12 +621,12 @@ def select_relevant_history(messages, current_query, k=5):
 ```markdown
 ## 文档摘要
 
-Source: [Article Title](URL)
-Relevant excerpts:
-- "Key quote 1..." (paragraph 3)
-- "Key quote 2..." (paragraph 7)
+来源：[文章标题](URL)
+相关摘录：
+- "关键引用 1..."（第 3 段）
+- "关键引用 2..."（第 7 段）
 
-[Additional context: Article discusses X, Y, and Z aspects of the topic]
+[额外上下文：文章讨论了该主题的 X、Y 和 Z 方面]
 ```
 
 ### Token 优化最佳实践
@@ -646,18 +646,18 @@ Relevant excerpts:
 
 **示例**：
 ```markdown
-❌ 过度约束:
-You MUST ALWAYS search exactly 5 times.
-You MUST follow steps 1-10 in exact order.
-You MUST NEVER skip any step.
+❌ 过度约束：
+你必须始终搜索恰好 5 次。
+你必须严格按照顺序执行步骤 1-10。
+你绝不能跳过任何步骤。
 ```
 
 **解决方案**：
 ```markdown
-✅ 平衡约束:
-Create 3-5 search tasks based on query complexity.
-Execute tasks in logical order, consolidating if overlap detected.
-Document reasoning if any task is deemed unnecessary.
+✅ 平衡约束：
+根据查询复杂度创建 3-5 个搜索任务。
+按逻辑顺序执行任务，如果检测到重叠则合并。
+如果认为任何任务不必要，记录理由。
 ```
 
 ### 陷阱 2：欠规范
@@ -666,20 +666,20 @@ Document reasoning if any task is deemed unnecessary.
 
 **示例**：
 ```markdown
-❌ 欠规范:
-Do good research.
-Be thorough.
-Provide a comprehensive answer.
+❌ 欠规范：
+做好研究。
+要彻底。
+提供全面的答案。
 ```
 
 **解决方案**：
 ```markdown
-✅ 明确规范:
-Research requirements:
-1. Create 3-5 specific search tasks
-2. Execute each task using search_tool
-3. Synthesize findings into structured report
-4. Include: executive summary, key findings, sources
+✅ 明确规范：
+研究要求：
+1. 创建 3-5 个具体的搜索任务
+2. 使用 search_tool 执行每个任务
+3. 将发现综合成结构化报告
+4. 包含：执行摘要、关键发现、来源
 ```
 
 ### 陷阱 3：忽略错误处理
@@ -688,18 +688,18 @@ Research requirements:
 
 **示例**：
 ```markdown
-❌ 忽略错误:
-Search for information and report findings.
+❌ 忽略错误：
+搜索信息并报告发现。
 ```
 
 **解决方案**：
 ```markdown
-✅ 包含错误处理:
-Search for information following these rules:
-- If search fails: retry once with rephrased query
-- If retry fails: document failure and continue
-- If >50% searches fail: alert user and request guidance
-- Never stop execution without user notification
+✅ 包含错误处理：
+按照以下规则搜索信息：
+- 如果搜索失败：用重新措辞的查询重试一次
+- 如果重试失败：记录失败并继续
+- 如果超过 50% 的搜索失败：提醒用户并请求指导
+- 未经用户通知绝不停止执行
 ```
 
 ### 陷阱 4：上下文膨胀
@@ -726,17 +726,17 @@ Search for information following these rules:
 
 **示例**：
 ```markdown
-❌ 冲突指令:
-Section 1: "Always provide detailed explanations"
-Section 2: "Keep responses under 50 words"
+❌ 冲突指令：
+第 1 节："始终提供详细解释"
+第 2 节："将回复保持在 50 字以内"
 ```
 
 **解决方案**：
 ```markdown
-✅ 一致指令:
-Section 1: "Provide detailed explanations for complex topics"
-Section 2: "For simple queries, concise answers are preferred"
-Section 3: "Use judgment: detailed when needed, concise when appropriate"
+✅ 一致指令：
+第 1 节："对复杂主题提供详细解释"
+第 2 节："对于简单查询，优先简洁回答"
+第 3 节："使用判断：需要时详细，适当时简洁"
 ```
 
 ### 陷阱对照表
@@ -890,14 +890,14 @@ workspace/
 <available_skills>
   <skill>
     <name>git-master</name>
-    <description>Advanced git operations</description>
+    <description>高级 Git 操作</description>
     <location>/home/user/.agents/skills/git-master/SKILL.md</location>
   </skill>
 </available_skills>
 
 ## 技能使用
 
-To use a skill, read the SKILL.md file at the specified location.
+要使用技能，请阅读指定位置的 SKILL.md 文件。
 ```
 
 #### 3. 上下文压缩策略
@@ -916,11 +916,11 @@ OpenClaw 在上下文中嵌入可观测性：
 ```markdown
 ## 回复格式
 
-Always structure responses as:
-- **Current Action**: What you're doing now
-- **Reasoning**: Why you're taking this action
-- **Progress**: Task completion status
-- **Next Steps**: Planned actions
+始终以以下结构组织回复：
+- **当前操作**：你现在正在做什么
+- **推理**：你为什么采取这个操作
+- **进度**：任务完成状态
+- **下一步**：计划的操作
 ```
 
 ### 从 OpenClaw 学到的经验
@@ -957,57 +957,57 @@ Always structure responses as:
 # 系统层
 
 ## 身份
-You are a customer service agent for a tech company.
+你是一家科技公司的客户服务 Agent。
 
 ## 核心能力
-- Answer product questions
-- Troubleshoot technical issues
-- Process refund requests
-- Escalate complex issues
+- 回答产品问题
+- 排查技术问题
+- 处理退款请求
+- 升级复杂问题
 
 ## 行为准则
-- Always be polite and professional
-- Prioritize customer satisfaction
-- Escalate when unable to resolve
+- 始终保持礼貌和专业
+- 优先考虑客户满意度
+- 无法解决时升级
 
 ---
 
 # 任务层
 
 ## 任务分类
-1. Information request → Provide answer
-2. Technical issue → Troubleshoot
-3. Refund request → Process or escalate
-4. Complaint → Acknowledge and resolve
+1. 信息请求 → 提供答案
+2. 技术问题 → 排查
+3. 退款请求 → 处理或升级
+4. 投诉 → 确认并解决
 
 ## 处理流程
-1. Classify the inquiry type
-2. Gather necessary information
-3. Provide solution or escalate
-4. Confirm resolution
+1. 分类查询类型
+2. 收集必要信息
+3. 提供解决方案或升级
+4. 确认解决
 
 ---
 
 # 工具层
 
 ## available_tools
-- search_knowledge_base(query): Search product documentation
-- check_order_status(order_id): Look up order information
-- process_refund(order_id): Initiate refund process
-- create_ticket(issue): Escalate to technical team
+- search_knowledge_base(query)：搜索产品文档
+- check_order_status(order_id)：查询订单信息
+- process_refund(order_id)：启动退款流程
+- create_ticket(issue)：升级到技术团队
 
 ---
 
 # 记忆层
 
 ## 用户偏好
-- Preferred contact method
-- Previous issues and resolutions
-- Account tier and benefits
+- 首选联系方式
+- 之前的问题和解决方案
+- 账户等级和权益
 
 ## 对话历史
-- Last 5 interactions summary
-- Ongoing issues tracking
+- 最近 5 次交互摘要
+- 持续问题跟踪
 ```
 
 ---
@@ -1018,19 +1018,18 @@ You are a customer service agent for a tech company.
 
 **原始上下文**：
 ```markdown
-The user is asking about how to implement authentication in their web application.
-They mentioned they are using React for the frontend and Node.js for the backend.
-Previously, we discussed different authentication methods including JWT, session-based
-authentication, and OAuth. The user seemed most interested in JWT but had concerns
-about security. We also talked about the importance of HTTPS and secure cookie settings.
-The user has intermediate level experience with web development and has built a few
-projects before but hasn't implemented authentication from scratch.
+用户询问如何在其 Web 应用程序中实现身份验证。
+他们提到前端使用 React，后端使用 Node.js。
+之前，我们讨论了不同的身份验证方法，包括 JWT、基于 session
+的身份验证和 OAuth。用户似乎对 JWT 最感兴趣，但对安全性有顾虑。
+我们还讨论了 HTTPS 和安全 cookie 设置的重要性。
+用户具有中级 Web 开发经验，之前构建过一些项目，但尚未从头实现过身份验证。
 
-Now they want to know:
-- How to structure the JWT payload
-- Where to store the token on the client
-- How to handle token refresh
-- Best practices for token expiration
+现在他们想知道：
+- 如何构建 JWT payload
+- 在客户端存储 token 的位置
+- 如何处理 token 刷新
+- Token 过期的最佳实践
 ```
 
 **你的优化版本**：
@@ -1043,17 +1042,17 @@ Now they want to know:
 
 ```markdown
 ## 用户画像
-- Experience: Intermediate web dev
-- Stack: React frontend, Node.js backend
-- Previous discussion: JWT vs session vs OAuth, chose JWT
-- Concerns: Security, HTTPS, secure cookies
+- 经验：中级 Web 开发
+- 技术栈：React 前端，Node.js 后端
+- 之前的讨论：JWT vs session vs OAuth，选择了 JWT
+- 关注点：安全性、HTTPS、安全 cookie
 
 ## 当前查询
-JWT implementation questions:
-1. Payload structure
-2. Client storage
-3. Token refresh
-4. Expiration best practices
+JWT 实现问题：
+1. Payload 结构
+2. 客户端存储
+3. Token 刷新
+4. 过期最佳实践
 ```
 
 ---
@@ -1079,34 +1078,34 @@ JWT implementation questions:
 ```markdown
 ## 错误处理策略
 
-### API Rate Limit
-- Detect: HTTP 429 status
-- Action: Wait 60 seconds, retry with exponential backoff
-- Max retries: 3
-- If still failing: Report to user and suggest alternative data source
+### API 限流
+- 检测：HTTP 429 状态
+- 操作：等待 60 秒，使用指数退避重试
+- 最大重试次数：3
+- 如果仍然失败：向用户报告并建议替代数据源
 
-### Data Format Error
-- Detect: JSON parse error or missing required fields
-- Action: Log raw response for debugging
-- Attempt: Use fallback parser or manual extraction
-- If failing: Report data quality issue to user
+### 数据格式错误
+- 检测：JSON 解析错误或缺少必填字段
+- 操作：记录原始响应以供调试
+- 尝试：使用备用解析器或手动提取
+- 如果失败：向用户报告数据质量问题
 
-### Network Timeout
-- Detect: Request timeout (>30s)
-- Action: Retry once immediately
-- If failing: Report connectivity issue, suggest checking later
+### 网络超时
+- 检测：请求超时（>30秒）
+- 操作：立即重试一次
+- 如果失败：报告连接问题，建议稍后检查
 
-### Empty Data
-- Detect: Empty array or null response
-- Action: Verify query parameters
-- Attempt: Broaden search criteria
-- If still empty: Report "No data found for criteria"
+### 空数据
+- 检测：空数组或 null 响应
+- 操作：验证查询参数
+- 尝试：扩大搜索条件
+- 如果仍然为空：报告"未找到符合条件的数据"
 
-### General Rule
-Never stop execution silently. Always report issues to user with:
-- What went wrong
-- What was attempted
-- Recommended next steps
+### 通用规则
+绝不静默停止执行。始终向用户报告问题，包括：
+- 出了什么问题
+- 尝试了哪些操作
+- 建议的后续步骤
 ```
 
 ---
@@ -1142,23 +1141,23 @@ workspace/
 # 提示词分层
 
 ## Full Mode（主审查代理）
-- Tooling: 代码分析工具
-- Safety: 安全审查准则
-- Skills: 可用技能列表
-- Workspace: 项目路径
-- Guidelines: AGENTS.md + STYLE.md
-- Architecture: ARCHITECTURE.md
-- History: HISTORY.md
+- Tooling：代码分析工具
+- Safety：安全审查准则
+- Skills：可用技能列表
+- Workspace：项目路径
+- Guidelines：AGENTS.md + STYLE.md
+- Architecture：ARCHITECTURE.md
+- History：HISTORY.md
 
 ## Minimal Mode（子代理）
-- Tooling: 基础工具
-- Safety: 安全准则
-- Workspace: 项目路径
-- Guidelines: AGENTS.md（精简版）
+- Tooling：基础工具
+- Safety：安全准则
+- Workspace：项目路径
+- Guidelines：AGENTS.md（精简版）
 
 # 上下文检查命令
 
-| Command | Purpose |
+| 命令 | 用途 |
 |---------|---------|
 | /status | 查看当前审查状态 |
 | /context files | 查看加载的上下文文件 |
@@ -1168,9 +1167,9 @@ workspace/
 # 子代理场景
 
 ## 专用子代理
-1. Security Reviewer: 专注安全检查
-2. Performance Reviewer: 专注性能优化
-3. Style Reviewer: 专注代码风格
+1. Security Reviewer：专注安全检查
+2. Performance Reviewer：专注性能优化
+3. Style Reviewer：专注代码风格
 
 ## 上下文策略
 - 主代理：Full mode，协调子代理
