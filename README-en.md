@@ -24,14 +24,6 @@ flowchart LR
     D --> E[Security]
     E --> F[Production]
     F --> G[Expert]
-    
-    style A fill:#e8f5e9
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-    style E fill:#fce4ec
-    style F fill:#e0f2f1
-    style G fill:#fff8e1
 ```
 
 ### Quick Navigation

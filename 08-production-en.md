@@ -91,10 +91,6 @@ flowchart TD
     J --> N
     K --> N
     L --> N
-
-    style A fill:#e3f2fd
-    style M fill:#e8f5e9
-    style N fill:#fff3e0
 ```
 
 ### Decision Points Explained
@@ -454,9 +450,6 @@ flowchart LR
         E2[Integration Tests]
         E3[A/B Validation]
     end
-
-    style A fill:#e8f5e9
-    style E fill:#e3f2fd
 ```
 
 ### Iteration Cycle Explained

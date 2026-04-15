@@ -94,13 +94,6 @@ graph TD
     C --> D[Level 4: Agent 系统<br/>Agent Systems]
     D --> E[Level 5: 多 Agent 编排<br/>Multi-Agent Orchestration]
     E --> F[Level 6: 自主优化<br/>Self-Optimization]
-
-    style A fill:#e8f5e9
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-    style E fill:#fce4ec
-    style F fill:#fff8e1
 ```
 
 #### Level 1: 简单指令（2018-2019）
@@ -330,20 +323,6 @@ flowchart LR
     J --> K
     J --> L
     L --> M
-
-    style A fill:#e8f5e9
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#fff3e0
-    style E fill:#f3e5f5
-    style F fill:#f3e5f5
-    style G fill:#fce4ec
-    style H fill:#e0f2f1
-    style I fill:#fff8e1
-    style J fill:#fff8e1
-    style K fill:#eceff1
-    style L fill:#eceff1
-    style M fill:#eceff1
 ```
 
 ### 章节详解
@@ -456,12 +435,6 @@ flowchart LR
     B --> C[第3章<br/>推理增强]
     C --> D[第11章<br/>模板库]
     D --> E[第12章<br/>速查表]
-
-    style A fill:#e8f5e9
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#eceff1
-    style E fill:#eceff1
 ```
 
 学习重点：
@@ -480,13 +453,6 @@ flowchart LR
     C --> D[第8章<br/>生产实践]
     D --> E[第9-10章<br/>高级与实战]
     E --> F[第11-13章<br/>参考]
-
-    style A fill:#e8f5e9
-    style B fill:#f3e5f5
-    style C fill:#fce4ec
-    style D fill:#e0f2f1
-    style E fill:#fff8e1
-    style F fill:#eceff1
 ```
 
 学习重点：
@@ -505,12 +471,6 @@ flowchart TD
     B -->|架构| D[第6,9章<br/>框架与高级]
     B -->|实战| E[第10章<br/>案例研究]
     B -->|生产| F[第8章<br/>生产实践]
-
-    style A fill:#fff8e1
-    style C fill:#fce4ec
-    style D fill:#f3e5f5
-    style E fill:#e0f2f1
-    style F fill:#e0f2f1
 ```
 
 学习重点：

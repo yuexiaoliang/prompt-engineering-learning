@@ -79,12 +79,7 @@ graph TD
     C --> D[ReAct Agent<br/>2022-2023]
     D --> E[Multi-Agent Systems<br/>2023-2024]
     E --> F[Context Engineering<br/>2024-2025]
-
-    style A fill:#e8f5e9
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-    style E fill:#fce4ec
+``` E fill:#fce4ec
     style F fill:#e0f2f1
 ```
 
@@ -153,13 +148,6 @@ graph TD
     C --> D[Context Engineering<br/>System Prompts, Memory]
     D --> E[Security & Defense<br/>Injection Prevention]
     E --> F[Production<br/>Observability, Iteration]
-
-    style A fill:#e8f5e9
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-    style E fill:#fce4ec
-    style F fill:#e0f2f1
 ```
 
 ---
@@ -202,22 +190,10 @@ flowchart LR
         M[Ch.13<br/>Appendix]
     end
 
-    J --> K
+        J --> K
     J --> L
     J --> M
-
-    style A fill:#e8f5e9
-    style B fill:#e8f5e9
-    style C fill:#e1f5fe
-    style D fill:#e1f5fe
-    style E fill:#fff3e0
-    style F fill:#fff3e0
-    style G fill:#fce4ec
-    style H fill:#fce4ec
-    style I fill:#f3e5f5
-    style J fill:#f3e5f5
-    style K fill:#e0f2f1
-    style L fill:#e0f2f1
+```:#e0f2f1
     style M fill:#e0f2f1
 ```
 

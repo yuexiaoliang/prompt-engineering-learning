@@ -62,13 +62,6 @@ flowchart TB
         L3 --> USER
     end
     
-    style USER fill:#e1f5fe
-    style L1 fill:#fff3e0
-    style L2 fill:#fff3e0
-    style L3 fill:#fff3e0
-    style W1 fill:#e8f5e9
-    style W2 fill:#e8f5e9
-    style W3 fill:#e8f5e9
 ```
 
 **Typical Collaboration Flow:**
@@ -114,11 +107,6 @@ flowchart LR
     S4 -.-> A4
     S5 -.-> A5
     
-    style S1 fill:#e3f2fd
-    style S2 fill:#e8f5e9
-    style S3 fill:#fff3e0
-    style S4 fill:#fce4ec
-    style S5 fill:#f3e5f5
 ```
 
 **Phase Details:**
@@ -178,13 +166,6 @@ flowchart TD
         L1B -.->|Read Only| E2
     end
     
-    style ROOT fill:#ffebee
-    style L1A fill:#fff3e0
-    style L1B fill:#fff3e0
-    style S1 fill:#e3f2fd
-    style S2 fill:#e3f2fd
-    style E1 fill:#e8f5e9
-    style E2 fill:#e8f5e9
 ```
 
 **Example Dispatch Chain:**
@@ -244,10 +225,6 @@ flowchart TB
         MATCH -->|No| STANDARD[Standard Processing]
     end
     
-    style START fill:#e3f2fd
-    style PROMPT fill:#fff3e0
-    style EXECUTE fill:#e8f5e9
-    style STANDARD fill:#eceff1
 ```
 
 **Skills Injection Format:**
@@ -330,13 +307,6 @@ flowchart LR
     CS --> DYN
     DYN --> CAT --> SKI --> FINAL
     
-    style PS fill:#e3f2fd
-    style FS fill:#e3f2fd
-    style CS fill:#e3f2fd
-    style DYN fill:#fff3e0
-    style CAT fill:#e8f5e9
-    style SKI fill:#fce4ec
-    style FINAL fill:#ffebee
 ```
 
 **Assembly Steps:**
@@ -409,13 +379,6 @@ flowchart TD
     USE_PROV --> FINAL
     USE_SYS --> FINAL
     
-    style START fill:#e3f2fd
-    style FINAL fill:#e8f5e9
-    style ERROR fill:#ffebee
-    style USE_OVERRIDE fill:#fff3e0
-    style USE_CAT fill:#fff3e0
-    style USE_PROV fill:#fff3e0
-    style USE_SYS fill:#fff3e0
 ```
 
 **Selection Priority:**

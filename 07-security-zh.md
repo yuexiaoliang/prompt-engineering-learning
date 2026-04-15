@@ -39,11 +39,6 @@ graph TD
     D --> D1[假设场景绕过]
     D --> D2[编码/翻译绕过]
     D --> D3[情感操控]
-    
-    style A fill:#ffebee
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style D fill:#fff3e0
 ```
 
 ### 1. 直接注入 (Direct Injection)

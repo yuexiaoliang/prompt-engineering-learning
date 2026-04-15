@@ -39,11 +39,6 @@ graph TD
     D --> D1[Hypothetical Scenario Bypass]
     D --> D2[Encoding/Translation Bypass]
     D --> D3[Emotional Manipulation]
-
-    style A fill:#ffebee
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style D fill:#fff3e0
 ```
 
 ### 1. Direct Injection

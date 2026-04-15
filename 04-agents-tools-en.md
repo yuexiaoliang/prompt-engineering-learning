@@ -202,10 +202,6 @@ flowchart LR
     end
 
     Q --> P1
-
-    style P1 fill:#e3f2fd
-    style P2 fill:#e8f5e9
-    style P3 fill:#fff3e0
 ```
 
 ### Document Q&A Example (Dual Prompt Chain)
@@ -362,10 +358,6 @@ flowchart TD
         P --> LLM[LLM]
         LLM --> A[Generated Answer]
     end
-
-    style Q fill:#e3f2fd
-    style D fill:#fff3e0
-    style A fill:#e8f5e9
 ```
 
 ### RAG Prompt Template
@@ -670,10 +662,6 @@ flowchart LR
     V -->|Valid| X
     V -->|Invalid| E
     E -->|Retry| LLM
-
-    style J fill:#e8f5e9
-    style X fill:#e3f2fd
-    style E fill:#ffebee
 ```
 
 ### Comparison of Output Formats

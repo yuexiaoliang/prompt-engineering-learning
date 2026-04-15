@@ -196,10 +196,6 @@ flowchart LR
         J --> K[Final Output]
     end
 
-    style A fill:#e3f2fd
-    style E fill:#fff3e0
-    style I fill:#e8f5e9
-    style K fill:#c8e6c9
 ```
 
 ### 文档问答示例（双 Prompt 链）
@@ -278,10 +274,6 @@ flowchart TD
     D --> D1[并行执行<br/>多个独立子任务]
     E --> E1[迭代优化<br/>直到满足条件]
 
-    style B fill:#e3f2fd
-    style C fill:#fff3e0
-    style D fill:#e8f5e9
-    style E fill:#fce4ec
 ```
 
 ---
@@ -313,10 +305,6 @@ flowchart TD
     J[知识库文档] --> K[文档编码器]
     K --> C
 
-    style A fill:#e3f2fd
-    style E fill:#fff3e0
-    style G fill:#e8f5e9
-    style I fill:#c8e6c9
 ```
 
 ### RAG Prompt 模板
@@ -440,8 +428,6 @@ flowchart LR
     D --> E[真实文档]
     E --> F[生成回答]
 
-    style B fill:#fff3e0
-    style E fill:#e8f5e9
 ```
 
 **Python 实现示例**：
@@ -943,10 +929,6 @@ flowchart TD
     I -->|是| J[JSON/XML + Pydantic]
     I -->|否| K[自由文本]
 
-    style C fill:#e3f2fd
-    style E fill:#fff3e0
-    style G fill:#e8f5e9
-    style J fill:#fce4ec
 ```
 
 ### 下一步学习
