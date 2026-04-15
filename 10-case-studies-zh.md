@@ -334,9 +334,9 @@ flowchart TD
 **问题：** [描述]
 **修复建议：**
 ```language
-// 错误
+// 错误代码
 [vulnerable code]
-// 正确
+// 正确代码
 [secure code]
 ```
 
