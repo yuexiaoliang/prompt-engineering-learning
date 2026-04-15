@@ -154,13 +154,12 @@ flowchart TD
 
 | 短语 | 适用场景 | 效果强度 |
 |------|----------|----------|
-| "Let's think step by step" | 通用数学/逻辑问题 | 强 |
-| "让我们一步步思考" | 中文场景 | 强 |
-| "Explain your reasoning" | 需要解释的任务 | 中 |
-| "Show your work" | 数学计算 | 强 |
-| "Walk me through your thinking" | 教学场景 | 中 |
-| "Break this down into steps" | 复杂问题分解 | 强 |
-| "First, ... Then, ... Finally, ..." | 强制步骤结构 | 强 |
+| "让我们一步步思考" / "Let's think step by step" | 通用数学/逻辑问题 | 强 |
+| "解释你的推理过程" / "Explain your reasoning" | 需要解释的任务 | 中 |
+| "展示你的工作" / "Show your work" | 数学计算 | 强 |
+| "引导我思考" / "Walk me through your thinking" | 教学场景 | 中 |
+| "逐步分解" / "Break this down into steps" | 复杂问题分解 | 强 |
+| "首先...然后...最后..." / "First, ... Then, ... Finally, ..." | 强制步骤结构 | 强 |
 
 #### CoT 变体模板
 
@@ -168,16 +167,16 @@ flowchart TD
 ```markdown
 [问题描述]
 
-Let's think step by step.
+让我们一步步思考。
 ```
 
 **Few-Shot CoT**:
 ```markdown
 Q: [问题 1]
-A: [推理步骤 1]... [推理步骤 N]. The answer is [答案].
+A: [推理步骤 1]... [推理步骤 N]。答案是 [答案]。
 
 Q: [问题 2]
-A: [推理步骤 1]... [推理步骤 N]. The answer is [答案].
+A: [推理步骤 1]... [推理步骤 N]。答案是 [答案]。
 
 Q: [实际问题]
 A:
@@ -187,8 +186,7 @@ A:
 ```markdown
 [问题描述]
 
-Let's think step by step and explore multiple approaches.
-Generate 3 different solutions and select the most consistent answer.
+让我们一步步思考，并探索多种方法。生成3个不同的解决方案，并选择最一致的那个。
 ```
 
 #### 使用时机
@@ -660,7 +658,7 @@ Summary:
 ```markdown
 ## 翻译任务
 
-Translate the following text from {{source_lang}} to {{target_lang}}.
+将以下文本从 {{source_lang}} 翻译为 {{target_lang}}。
 
 Requirements:
 - Maintain the original tone and style
