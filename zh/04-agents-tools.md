@@ -103,11 +103,12 @@ sequenceDiagram
 以下是使用 LangChain 实现 ReAct Agent 的代码示例：
 
 ```python
+# LangChain v0.2+
 from langchain.agents import load_tools, initialize_agent
-from langchain.llms import OpenAI
+from langchain_openai import ChatOpenAI
 
 # 设置 LLM 和工具
-llm = OpenAI(temperature=0)
+llm = ChatOpenAI(temperature=0)
 tools = load_tools(["google-serper", "llm-math"], llm=llm)
 
 # 初始化 ReAct Agent

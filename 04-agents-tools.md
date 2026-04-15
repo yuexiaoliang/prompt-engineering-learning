@@ -82,12 +82,13 @@ Action 5: Finish[1,800 to 7,000 ft]
 Here is a practical implementation using LangChain:
 
 ```python
+# LangChain v0.2+
 from langchain.agents import load_tools, initialize_agent
 from langchain.agents import AgentType
-from langchain.llms import OpenAI
+from langchain_openai import ChatOpenAI
 
 # Initialize the LLM
-llm = OpenAI(temperature=0)
+llm = ChatOpenAI(temperature=0)
 
 # Load tools (search and math)
 tools = load_tools([
@@ -441,10 +442,11 @@ Step 3: Based on the retrieved real documents, provide the actual answer.
 ### Python Implementation
 
 ```python
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
+# LangChain v0.2+
+from langchain_openai import OpenAIEmbeddings
+from langchain_chroma import Chroma
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
+from langchain_openai import ChatOpenAI
 
 # Initialize components
 embeddings = OpenAIEmbeddings()
