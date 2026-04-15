@@ -24,9 +24,6 @@ Zero-Shot Prompting 是指直接向模型发出指令，不提供任何示例。
 flowchart LR
     A[用户指令] --> B[LLM]
     B --> C[直接输出]
-
-    style A fill:#e1f5fe
-    style C fill:#e8f5e9
 ```
 
 ### 适用场景
@@ -135,11 +132,6 @@ flowchart LR
     C[示例 3] --> D
     D --> E[新输入]
     E --> F[遵循模式的输出]
-
-    style A fill:#fff3e0
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style F fill:#e8f5e9
 ```
 
 ### 适用场景
@@ -285,11 +277,7 @@ flowchart TB
         M2[解决步骤] --> M3
         M3 --> M4[应用到任意输入]
     end
-
-    style Few-Shot fill:#fff3e0
-    style Meta fill:#e1f5fe
 ```
-
 | 维度 | Few-Shot | Meta Prompting |
 |------|---------|---------------|
 | **驱动方式** | 内容驱动 | 结构驱动 |
@@ -580,9 +568,6 @@ flowchart LR
     E --> F[优化 Prompt]
     F --> B
     D -->|是| G[部署]
-
-    style A fill:#e1f5fe
-    style G fill:#e8f5e9
 ```
 
 **常见优化策略**：
@@ -790,10 +775,6 @@ flowchart TD
     C --> G[基础模板]
     E --> G
     F --> G
-
-    style C fill:#e1f5fe
-    style E fill:#fff3e0
-    style F fill:#f3e5f5
 ```
 
 ### 下一步学习
