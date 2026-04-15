@@ -84,11 +84,6 @@ graph TD
     T1 --> D1
     D1 --> M4
     M4 --> T1
-
-    style S1 fill:#e3f2fd
-    style T1 fill:#e8f5e9
-    style D1 fill:#fff3e0
-    style M1 fill:#f3e5f5
 ```
 
 ### Layer Descriptions
@@ -129,13 +124,10 @@ flowchart LR
         R[Response]
     end
 
-    U --> C
+        U --> C
     C --> L
     L --> R
     R --> M
-
-    style C fill:#e3f2fd
-    style L fill:#e8f5e9
 ```
 
 ---
@@ -338,15 +330,11 @@ Context engineering is an iterative process:
 
 ```mermaid
 flowchart LR
-    D[Deploy] --> O[Observe]
+        D[Deploy] --> O[Observe]
     O --> I[Identify Issues]
     I --> R[Refine Context]
     R --> T[Test]
     T --> D
-
-    style D fill:#e3f2fd
-    style O fill:#fff3e0
-    style R fill:#e8f5e9
 ```
 
 **Iteration Checklist:**
@@ -663,10 +651,6 @@ flowchart TD
     subgraph "None Mode"
         E --> E1[Base Identity Only]
     end
-
-    style C fill:#e8f5e9
-    style D fill:#fff3e0
-    style E fill:#ffebee
 ```
 
 ### Workspace Bootstrap File Injection
@@ -795,10 +779,7 @@ flowchart TB
     S1 --> C
     S2 --> C
 
-    C --> LLM[LLM]
-
-    style C fill:#e3f2fd
-    style LLM fill:#e8f5e9
+        C --> LLM[LLM]
 ```
 
 ---
