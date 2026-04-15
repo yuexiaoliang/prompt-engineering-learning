@@ -80,7 +80,6 @@ graph TD
     D --> E[Multi-Agent Systems<br/>2023-2024]
     E --> F[Context Engineering<br/>2024-2025]
 ```
-```
 
 ### Key Milestones
 
@@ -192,7 +191,6 @@ flowchart LR
         J --> K
     J --> L
     J --> M
-```
 ```
 
 ### Chapter Guide
