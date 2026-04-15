@@ -33,8 +33,6 @@ flowchart LR
     C --> D[推理步骤 N]
     D --> E[最终答案]
 
-    style A fill:#e1f5fe
-    style E fill:#e8f5e9
 ```
 
 CoT 的核心思想是：将复杂问题分解为一系列简单的推理步骤，每个步骤都建立在前一步的基础上，最终得出答案。
@@ -216,9 +214,6 @@ flowchart TD
     D --> G[添加魔法短语]
     E --> H[提供示例引导]
 
-    style C fill:#fff3e0
-    style G fill:#e8f5e9
-    style H fill:#f3e5f5
 ```
 
 1. **简单问题可能不需要 CoT**：对于直接的事实性问题，添加推理步骤反而会增加不必要的 Token 消耗
@@ -264,8 +259,6 @@ flowchart TB
         T3D --> T4
     end
 
-    style CoT fill:#e1f5fe
-    style ToT fill:#fff3e0
 ```
 
 | 特性 | Chain-of-Thought | Tree of Thoughts |
@@ -299,9 +292,6 @@ graph TD
     K --> L[思维 3A]
     K --> M[思维 3B]
 
-    style A fill:#fff3e0
-    style I fill:#e1f5fe
-    style J fill:#e8f5e9
 ```
 
 ### ToT 实施步骤
@@ -413,9 +403,6 @@ flowchart TD
 
     J -->|多数胜出| K[最终答案]
 
-    style A fill:#e1f5fe
-    style J fill:#fff3e0
-    style K fill:#e8f5e9
 ```
 
 ### 工作原理
@@ -493,9 +480,6 @@ flowchart LR
     D --> B
     C -->|否| E[最终答案]
 
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style E fill:#e8f5e9
 ```
 
 ### 模板结构
@@ -632,10 +616,6 @@ flowchart TD
     F --> D
     D -->|是| G[最终输出]
 
-    style A fill:#ffebee
-    style C fill:#fff3e0
-    style F fill:#e8f5e9
-    style G fill:#c8e6c9
 ```
 
 ---
@@ -673,10 +653,6 @@ flowchart TD
     G --> Q[Agent 模板]
     I --> Q
 
-    style A fill:#e1f5fe
-    style O fill:#e8f5e9
-    style P fill:#fff3e0
-    style Q fill:#f3e5f5
 ```
 
 ### 技术选择速查表
@@ -699,8 +675,6 @@ flowchart LR
     D --> E[Reflexion 改进]
     E --> F[高质量答案]
 
-    style A fill:#ffebee
-    style F fill:#c8e6c9
 ```
 
 对于特别复杂的问题，可以组合使用多种技术：
@@ -866,8 +840,6 @@ flowchart LR
     E --> F[Self-Consistency]
     F --> G[Reflexion]
 
-    style A fill:#e1f5fe
-    style G fill:#c8e6c9
 ```
 
 ### 下一步学习
