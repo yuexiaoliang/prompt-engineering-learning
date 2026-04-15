@@ -79,7 +79,7 @@ graph TD
     C --> D[ReAct Agent<br/>2022-2023]
     D --> E[Multi-Agent Systems<br/>2023-2024]
     E --> F[Context Engineering<br/>2024-2025]
-``` E fill:#fce4ec
+```
 ```
 
 ### Key Milestones
@@ -192,7 +192,7 @@ flowchart LR
         J --> K
     J --> L
     J --> M
-```:#e0f2f1
+```
 ```
 
 ### Chapter Guide
