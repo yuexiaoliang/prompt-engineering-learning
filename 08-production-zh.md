@@ -166,10 +166,7 @@ flowchart TD
     K --> N
     L --> O[工作流模板]
 
-    style A fill:#e3f2fd
-    style M fill:#e8f5e9
-    style N fill:#fff3e0
-    style O fill:#fce4ec
+
 ```
 
 ### 决策节点说明
@@ -764,12 +761,7 @@ flowchart TD
     F -->|否| C
     F -->|是| A
 
-    style A fill:#e8f5e9
-    style B fill:#e3f2fd
-    style C fill:#fff3e0
-    style D fill:#fce4ec
-    style E fill:#f3e5f5
-    style F fill:#e1f5fe
+
 ```
 
 ### 各阶段详解
