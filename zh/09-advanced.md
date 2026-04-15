@@ -325,40 +325,17 @@ flowchart TB
 
 ### 9.3.2 提示词模式切换
 
-OpenClaw 支持为子代理渲染更小的系统提示词，通过 `promptMode` 控制：
+OpenClaw 支持为子代理渲染更小的系统提示词，通过 `promptMode` 控制。
 
-#### 模式对比
+> **详见第 5 章** [上下文工程](./05-context-engineering.md#提示词模式系统) 获取完整的模式说明、引导文件注入机制和最佳实践。
 
-```mermaid
-flowchart TB
-    subgraph "Prompt Modes"
-        FULL[full<br/>完整模式]
-        MIN[minimal<br/>最小模式]
-        NONE[none<br/>无模式]
-        
-        FULL -->|包含所有部分| ALL[Tooling + Safety + Skills + Workspace + ...]
-        MIN -->|省略部分| PART[Tooling + Safety + Workspace + Runtime]
-        NONE -->|仅基础身份| BASE[Identity Only]
-    end
-```
+三种模式的核心区别：
 
 | 模式 | 适用场景 | 包含内容 |
 |------|----------|----------|
 | **full** | 主 Agent | 所有部分（工具、安全、技能、工作空间等） |
-| **minimal** | 子 Agent | 仅核心部分（工具、安全、工作空间、运行时） |
+| **minimal** | 子 Agent | 仅核心部分（工具、安全、工作空间、运行时），省略 Skills、Heartbeats 等 |
 | **none** | 特殊场景 | 仅基础身份行 |
-
-#### minimal 模式省略内容
-
-- Skills
-- Memory Recall
-- OpenClaw Self-Update
-- Model Aliases
-- User Identity
-- Reply Tags
-- Messaging
-- Silent Replies
-- Heartbeats
 
 ---
 

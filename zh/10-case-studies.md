@@ -23,6 +23,8 @@
 
 基于 Claude Code 的系统提示词设计，展示如何构建一个高效、可靠的 AI 编码助手。
 
+> **框架详情**：Claude Code 的完整 Agent 模式分析，包括四种核心模式（分析、生成、验证、编排）和子代理调度机制，详见 [第 6 章：框架分析](./06-frameworks.md#claude-code-agent-模式)。
+
 ### 架构设计
 
 ```mermaid
@@ -49,9 +51,9 @@ flowchart TD
 
 #### 1. 极端的简洁性要求
 
-**设计意图**：降低 token 消耗，提高响应速度
+Claude Code 对输出长度有严格限制，要求"除非用户要求详细说明，否则必须用少于 4 行回答"。
 
-**实现方式**：
+**关键实现**：
 - 强制要求 "少于 4 行"
 - 禁止前言和后语
 - 一个词回答优先
@@ -59,9 +61,9 @@ flowchart TD
 
 #### 2. 任务管理的强制性
 
-**设计意图**：确保复杂任务的可追踪性和可完成性
+使用 TodoWrite 工具频繁跟踪任务，"完成任务后立即标记为完成至关重要"。
 
-**实现方式**：
+**关键实现**：
 - 使用 **MUST** 和 **EXTREMELY** 等强语气词
 - "这是不可接受的" - 情感化强调
 - 提供详细的正反示例
@@ -69,9 +71,9 @@ flowchart TD
 
 #### 3. 代码规范的严格约束
 
-**设计意图**：维护代码库一致性
+维护代码库一致性，避免破坏性变更。
 
-**实现方式**：
+**关键实现**：
 - "绝不假设库可用"
 - "不要添加任何注释"
 - 模仿现有代码风格
@@ -371,7 +373,11 @@ flowchart TD
 
 基于 oh-my-codex $team 技能，展示如何构建多代理协作的复杂工作流。
 
+> **框架详情**：oh-my-codex 的完整架构，包括 32 角色分类体系、AgentDefinition 接口和典型工作流示例，详见 [第 6 章：框架分析](./06-frameworks.md#oh-my-codex-多代理编排)。
+
 ### 架构设计
+
+oh-my-codex 采用五阶段流水线（`plan → prd → exec → verify → fix`）确保质量：
 
 ```mermaid
 flowchart TD
@@ -430,6 +436,8 @@ stateDiagram-v2
 ```
 
 ### 调用规则
+
+采用 Leader-Worker 层级结构，严格限制调用权限：
 
 | 调用者 \ 被调用者 | Leader | Specialist | Executor |
 |------------------|--------|------------|----------|
@@ -501,7 +509,11 @@ stateDiagram-v2
 
 基于 OpenClaw 的提示词系统，展示如何构建可配置的个人 AI 助手。
 
+> **框架详情**：OpenClaw 的完整提示系统架构，包括技能系统、上下文检查命令和最佳实践，详见 [第 5 章：上下文工程](./05-context-engineering.md#openclaw-上下文管理实践) 和 [第 6 章：框架分析](./06-frameworks.md#openclaw-提示系统)。
+
 ### 架构设计
+
+OpenClaw 采用模块化系统提示词构建，结合引导文件注入：
 
 ```mermaid
 flowchart TD
@@ -529,21 +541,17 @@ flowchart TD
 
 ### 提示词模式
 
-#### 1. Full 模式（默认）
+OpenClaw 支持三种提示词模式，适应不同场景：
 
-包含所有部分：Tooling、Safety、Skills、Self-Update、Workspace、Documentation、Bootstrap、Sandbox、Time、Reply Tags、Heartbeats、Runtime、Reasoning
-
-#### 2. Minimal 模式（子代理）
-
-**省略**：Skills、Memory Recall、Self-Update、Model Aliases、User Identity、Reply Tags、Messaging、Silent Replies、Heartbeats
-
-**保留**：Tooling、Safety、Workspace、Sandbox、Time、Runtime、注入上下文
-
-#### 3. None 模式
-
-仅返回基础身份行。
+| 模式 | 适用场景 | 说明 |
+|------|----------|------|
+| **full** | 主 Agent | 包含所有部分（Tooling、Safety、Skills、Workspace 等） |
+| **minimal** | 子 Agent | 仅核心部分，省略 Skills、Heartbeats 等非必要内容 |
+| **none** | 特殊场景 | 仅返回基础身份行 |
 
 ### 引导文件系统
+
+通过工作空间引导文件注入项目特定上下文：
 
 | 文件 | 说明 |
 |------|------|
@@ -552,7 +560,6 @@ flowchart TD
 | `TOOLS.md` | 用户维护的工具笔记 |
 | `IDENTITY.md` | 代理名称/风格/表情 |
 | `USER.md` | 用户资料 + 首选称呼 |
-| `HEARTBEAT.md` | 心跳检查配置 |
 | `BOOTSTRAP.md` | 仅在新工作空间首次运行时注入 |
 | `MEMORY.md` | 长期记忆（存在时） |
 
