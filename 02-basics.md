@@ -67,7 +67,7 @@ Translation:
 
 #### Example 3: Code Generation
 
-```markdown
+````markdown
 Write a Python function that calculates the factorial of a number.
 
 Requirements:
@@ -77,6 +77,7 @@ Requirements:
 
 Code:
 ```
+````
 
 **Expected Output**:
 ```python
