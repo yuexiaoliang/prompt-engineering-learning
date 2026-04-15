@@ -266,7 +266,10 @@ Is there anything specific about their cloud services you'd like to know more ab
 ### Python Implementation
 
 ```python
-import openai
+# OpenAI SDK v1.x
+from openai import OpenAI
+
+client = OpenAI()
 
 def extract_quotes(document, question):
     """Step 1: Extract relevant quotes from document"""
@@ -281,7 +284,7 @@ Respond with "No relevant quotes found!" if no relevant quotes were found.
 
 Question: {question}"""
 
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[{"role": "user", "content": prompt}]
     )
@@ -305,7 +308,7 @@ Question: {question}
 
 Please provide a comprehensive answer based on the documents above:"""
 
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[{"role": "user", "content": prompt}]
     )
