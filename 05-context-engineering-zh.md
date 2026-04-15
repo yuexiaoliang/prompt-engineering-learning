@@ -63,12 +63,20 @@ graph TD
     A --> A1[核心身份与能力定义<br/>Agent 角色、行为准则<br/>全局约束和策略]
     B --> B1[具体任务指令<br/>当前目标、执行步骤<br/>输出格式要求]
     C --> C1[工具描述与使用指南<br/>可用工具列表<br/>调用格式和示例]
-    D --> D1[历史上下文与学习<br/>对话历史<br/>长期记忆、知识库]
+        D --> D1[历史上下文与学习<br/>对话历史<br/>长期记忆、知识库]
+```mermaid
+graph TD
+    subgraph "完整系统上下文"
+        A[系统层 System Layer]
+        B[任务层 Task Layer]
+        C[工具层 Tool Layer]
+        D[记忆层 Memory Layer]
+    end
 
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style D fill:#fce4ec
+    A --> A1[核心身份与能力定义<br/>Agent 角色、行为准则<br/>全局约束和策略]
+    B --> B1[具体任务指令<br/>当前目标、执行步骤<br/>输出格式要求]
+    C --> C1[工具描述与使用指南<br/>可用工具列表<br/>调用格式和示例]
+    D --> D1[历史上下文与学习<br/>对话历史<br/>长期记忆、知识库]
 ```
 
 ### 各层详解
@@ -199,12 +207,6 @@ flowchart TD
         H[工具调用结果] --> I[更新记忆层]
         J[新学习] --> K[持久化记忆]
     end
-
-    style A fill:#e3f2fd
-    style B fill:#fce4ec
-    style C fill:#fff3e0
-    style D fill:#e8f5e9
-    style E fill:#c8e6c9
 ```
 
 ---
@@ -543,10 +545,6 @@ graph LR
     B -->|严格约束| C[高可预测性<br/>低灵活性]
     B -->|灵活指南| D[高灵活性<br/>可能不一致]
     B -->|平衡方法| E[结构化框架<br/>+ 灵活执行]
-
-    style C fill:#ffcdd2
-    style D fill:#ffcdd2
-    style E fill:#c8e6c9
 ```
 
 **平衡策略**：
@@ -776,13 +774,6 @@ graph TD
         H --> I[Reply Tags<br/>回复标签]
         I --> J[Heartbeats<br/>心跳机制]
     end
-
-    style A fill:#e3f2fd
-    style B fill:#ffcdd2
-    style C fill:#fff3e0
-    style D fill:#e8f5e9
-    style F fill:#fce4ec
-    style H fill:#f3e5f5
 ```
 
 ### 工作空间引导文件注入
